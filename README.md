@@ -82,10 +82,7 @@ Here are some of its key features:
    - **System Monitoring and Updates**: Regular software and hardware updates to ensure reliability and security.
 
 These requirements are essential for developing an efficient and scalable HVAC occupancy detection system, supporting real-time operation, predictive maintenance, and adaptive energy management for smart buildings.
-## System Architecture
-<!--Embed the system architecture diagram as shown below-->
 
-![Screenshot 2023-11-25 133637](https://github.com/<<yourusername>>/Hand-Gesture-Recognition-System/assets/75235455/a60c11f3-0a11-47fb-ac89-755d5f45c995)
 #program
 ```
 # This Python 3 environment comes with many helpful analytics libraries installed
@@ -435,15 +432,15 @@ ax = sns.heatmap(confusion_matrix(y_test, y_pred), annot=True, fmt="d")
 
 ![__results___46_0](https://github.com/user-attachments/assets/0e31328e-f9c3-4fd7-9ffb-71a6de162483)
 
-Detection Accuracy: 96.7%
-Note: These metrics can be customized based on your actual performance evaluations.
+
 
 
 ## Results and Impact
 <!--Give the results and impact as shown below-->
-The Sign Language Detection System enhances accessibility for individuals with hearing and speech impairments, providing a valuable tool for inclusive communication. The project's integration of computer vision and deep learning showcases its potential for intuitive and interactive human-computer interaction.
+Both of the models did great job when predicting occupancy. Our accuracy is nearly 98%. So what do you think, which method (ML or DL) is suitable for this dataset and problem?
 
-This project serves as a foundation for future developments in assistive technologies and contributes to creating a more inclusive and accessible digital environment.
+Before answer that, look at the confusion matrix which are created when evaluating models with the test data. SVM model looks like biased toward occupied class. But we don't have that problem with neural network. So we can say that, we could use neural network for more stable and accurate results without significant errors.
+
 
 ## Articles published / References
   
